@@ -24,3 +24,5 @@ Open the folder and open the HTML file and disconnect the internet connection.
 Populate the html fields with a seed and a payload (easily you can commit an error constructing the payload manually) and SIGN the payload offline.
 
 Then copy the tx blob and past it in the Tx_blob section and click SUBMIT payload online, watch the results.
+
+Try the demo online here: https://skunk-proper-smoothly.ngrok-free.app/tools/signofflinepayload/signsubmit
