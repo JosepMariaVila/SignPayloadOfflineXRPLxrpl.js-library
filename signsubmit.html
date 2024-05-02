@@ -1,0 +1,112 @@
+<html>
+  <head>
+    <title>SIGN OFFLINE</title>
+    <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
+    <style>
+       body{font-family: "Work Sans", sans-serif;padding: 20px;background: #ce91e2;}
+       h1{font-weight: bold;}
+       input, button {padding: 6px;margin-bottom: 8px;}
+       button{font-weight: bold;font-family: "Work Sans", sans-serif;}
+       td{vertical-align: middle;}
+    </style>
+  <script>
+    if (typeof module !== "undefined") {
+      var xrpl = require('xrpl')
+    }
+  </script>
+    <script src='node_modules/xrpl/build/xrpl-latest-min.js'></script>
+    <script src='node_modules/xrpl/build/xrpl-latest-min.js.map'></script>
+    <script src='node_modules/xrpl/build/xrpl-latest.js'></script>
+    <script src='node_modules/xrpl/build/xrpl-latest.js.map'></script>
+    <script src='signsubmit.js'></script>
+
+  </head>
+  
+<!-- ********************** The Form ****************************** -->
+
+  <body>
+    <h1>SIGN PAYLOAD OFFLINE</h1>
+    <form id="theForm">
+      <table>
+        <tr valign="top">
+          <td>
+            <table>
+              <tr valign="top">
+                <td>
+                  <table>
+                    <tr>
+                      <td align="right">
+                        Seed:
+                      </td>
+                      <td>
+                        <input type="text" id="standbySeedField" size="40"></input>
+                        <br>
+                      </td>
+                    </tr>
+                    <table>
+                      Payload:
+                       </p>
+                     <td>
+                       <textarea id="payloadField" cols="90" rows="13"></textarea>
+                     </td>
+                 </table>
+                  </table>
+                  <br/>
+                  <button type="button" onClick="sign1()">Sign payload offline</button>
+                </p>
+                    <textarea id="standbyResultField" cols="90" rows="8" ></textarea>
+                  </p>
+                  <button type="button" onClick="reload()">Clear fields</button>
+                  <br/>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </form>
+
+    <h1>SUBMIT SIGNED PAYLOAD ONLINE</h1>
+    <form id="theForm">
+      Choose:  
+      &nbsp;&nbsp;
+      <input type="radio" id="tn" name="server"
+        value="wss://s.altnet.rippletest.net:51233" checked>
+      <label for="testnet">Testnet</label>
+      &nbsp;&nbsp;
+      <input type="radio" id="dn" name="server"
+        value="wss://s.devnet.rippletest.net:51233">
+      <label for="devnet">Devnet</label>
+      &nbsp;&nbsp;
+      <input type="radio" id="mn" name="server"
+        value="wss://xrplcluster.com">
+      <label for="mainnet">Mainnet</label>
+      <br/><br/>
+      <table>
+        <tr valign="top">
+          <td>
+            <table>
+              <tr valign="top">
+                <td>
+                  <table>
+                       Tx_blob:
+                        </p>
+                      <td>
+                        <textarea id="txblobField" cols="90" rows="5"></textarea>
+                      </td>
+                  </table>
+                  <br/>
+                  <button type="button" onClick="submit1()">Submit signed payload online</button>
+                </p>
+                <textarea id="standbyResultField1" cols="90" rows="8" ></textarea>
+                  </p>
+                  <button type="button" onClick="reload2()">Clear fields</button>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
