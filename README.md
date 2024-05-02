@@ -11,7 +11,7 @@ Create an empty folder in your desktop and name it as you like.
 
 Download the 2 files I have in this project and put them in that folder: signsubmit.js signsubmit.html
 
-Open that folder with VSC, or when you are in VSC open that folde.r
+Open that folder with VSC, or when you are in VSC open the folder.
 
 Open a terminal and type (it creates a basic package.json): npm init --yes
 
