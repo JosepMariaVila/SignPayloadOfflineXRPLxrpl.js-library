@@ -10,7 +10,7 @@ async function sign1() {
   console.log("tx hash is:", signed.hash);
   standbyResultField.value =
     "tx blob is: " + signed.tx_blob + "\ntx hash is: \n" + signed.hash;
-} // End of main()
+}
 
 async function reload() {
   window.location.reload();
