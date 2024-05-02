@@ -23,4 +23,4 @@ Open the folder and open the HTML file and disconnect the internet connection.
 
 Populate the html field with a payload (easily you can commit an error constructing the payload manually) and SIGN the payload offline.
 
-Then copy the tx blob and past it in the Tx_blob section band SUBMIT the signed payload online, watch the results.
+Then copy the tx blob and past it in the Tx_blob section and click SUBMIT payload online, watch the results.
