@@ -1,6 +1,17 @@
+// ******************** GET ALGORITHM ********
+function getAlgo() {
+  let algo;
+  if (document.getElementById("secp").checked) algo = "secp256k1";
+  if (document.getElementById("ed").checked) algo = "ed25519";
+  return algo;
+} // End of getAlgo()
+
 // ******************** SIGN TRANSACTION OFFLINE ********
 async function sign1() {
-  const wallet = xrpl.Wallet.fromSeed(standbySeedField.value);
+  let algo = getAlgo();
+  const wallet = xrpl.Wallet.fromSeed(standbySeedField.value, {
+    algorithm: algo,
+  });
   const payload1 = document.getElementById("payloadField").value;
   console.log(payload1);
   const txJSON = JSON.parse(payload1);
@@ -10,13 +21,13 @@ async function sign1() {
   console.log("tx hash is:", signed.hash);
   standbyResultField.value =
     "tx blob is: " + signed.tx_blob + "\ntx hash is: \n" + signed.hash;
-}
+} // End of sign1()
 
 async function reload() {
   window.location.reload();
 }
 
-// ************* GET PREFERED NETWORK **************
+// ************* GET NETWORK **************
 
 function getNet() {
   let net;

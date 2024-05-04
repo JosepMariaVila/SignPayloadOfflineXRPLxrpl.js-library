@@ -19,14 +19,22 @@
     <script src='node_modules/xrpl/build/xrpl-latest.js'></script>
     <script src='node_modules/xrpl/build/xrpl-latest.js.map'></script>
     <script src='signsubmit.js'></script>
-
   </head>
   
 <!-- ********************** The Form ****************************** -->
 
   <body>
     <h1>SIGN PAYLOAD OFFLINE</h1>
-    <form id="theForm">
+    <form id="theForm2">
+      Choose algo:  
+      &nbsp;&nbsp;
+      <input type="radio" id="secp" name="algorit" value="secp256k1">
+      <label for="secpp">Secp256k1 (29 characters seeds)</label>
+      &nbsp;&nbsp;
+      <input type="radio" id="ed" name="algorit" value="ed25519">
+      <label for="dedd">Ed25519 (31 characters seeds)</label>
+      &nbsp;&nbsp;
+      <br/><br/>
       <table>
         <tr valign="top">
           <td>
