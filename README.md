@@ -1,7 +1,13 @@
 # SIGN-PAYLOAD-OFFLINE-xrpl.js-library
 Sign offline any payload by inputting data in an html file and then submit it online.
 
-It uses the xrpl.js library.
+It uses the xrpl.js library. 
+
+It uses a seed to derive the account address and sign transactions, 2 options are possible:
+
+Option A: 29 characters seeds (suNq9PQrYKEifmLdFs9NPjdLeyMKm) which correspond to the secp256k1 algorithm.
+
+Option B: 31 characters seeds (sKdNVBLAmVjgcDrEfDSzTSBqsagHMEd) which correspond to the ed25519 algorithm.
 
 Use Node.js and VisualStudioCode to set up the project (or any similar tool). Then you would sign completely offline disconnecting from the internet connection. 
 
