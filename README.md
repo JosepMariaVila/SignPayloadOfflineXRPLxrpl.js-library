@@ -32,7 +32,7 @@ Step by step guide to use the code:
    https://xrpl.org/docs/references/protocol/transactions/types
    
    To create a payload check this tool:
-   https://xaman.dev/signing-tool?
+   https://xaman.dev/signing-tool
    
 9) SIGN the payload offline.
 
