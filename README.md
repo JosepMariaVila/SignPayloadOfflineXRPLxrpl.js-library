@@ -32,10 +32,10 @@ Step by step guide to use the code:
    https://xrpl.org/docs/references/protocol/transactions/types
    
    To create a payload check this tool:
-   https://xaman.dev/signing-tool?payload=eyJUcmFuc2FjdGlvblR5cGUiOiJQYXltZW50IiwiQWNjb3VudCI6InJURVNUd1BVTjlSYm9DQmdFWHFLYnBrVHFEQ2V3TUhLOSIsIkRlc3RpbmF0aW9uIjoiclNUQVlLeEYySzc3WkxaOEdvQXdUcVBHYXBoQXFNeVhWIiwiQW1vdW50IjoiMTYxMTYiLCJQYXRocyI6W3siY3VycmVuY3kiOiJTVFgiLCJpc3N1ZXIiOiJyU1RBWUt4RjJLNzdaTFo4R29Bd1RxUEdhcGhBcU15WFYifV0sIkZlZSI6IjE1In0=
+   https://xaman.dev/signing-tool?                        payload=eyJUcmFuc2FjdGlvblR5cGUiOiJQYXltZW50IiwiQWNjb3VudCI6InJURVNUd1BVTjlSYm9DQmdFWHFLYnBrVHFEQ2V3TUhLOSIsIkRlc3RpbmF0aW9uIjoiclNUQVlLeEYySzc3WkxaOEdvQXdUcVBHYXBoQXFNeVhWIiwiQW1vdW50IjoiMTYxMTYiLCJQYXRocyI6W3siY3VycmVuY3kiOiJTVFgiLCJpc3N1ZXIiOiJyU1RBWUt4RjJLNzdaTFo4R29Bd1RxUEdhcGhBcU15WFYifV0sIkZlZSI6IjE1In0=
    
 9) SIGN the payload offline.
 
-10) Then copy the tx blob and past it in the Tx_blob section and click SUBMIT payload online, watch the results.
+10) Then copy the tx blob and past it in the Tx_blob section, connect to the internet and click "SUBMIT signed payload online", watch the results.
 
 Try the demo online here: https://skunk-proper-smoothly.ngrok-free.app/tools/signofflinepayload/signsubmit
