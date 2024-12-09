@@ -27,8 +27,15 @@ Step by step guide to use the code:
 
 7) Open the folder and open the HTML file and disconnect the internet connection.
 
-8) Populate the html fields with a seed and a payload (easily you can commit an error constructing the payload manually) and SIGN the payload offline.
+8) Populate the html fields with a seed and a payload.
+   Here the documentation about payload creation:
+   https://xrpl.org/docs/references/protocol/transactions/types
+   
+   To create a payload check this tool:
+   https://xaman.dev/signing-tool?payload=eyJUcmFuc2FjdGlvblR5cGUiOiJQYXltZW50IiwiQWNjb3VudCI6InJURVNUd1BVTjlSYm9DQmdFWHFLYnBrVHFEQ2V3TUhLOSIsIkRlc3RpbmF0aW9uIjoiclNUQVlLeEYySzc3WkxaOEdvQXdUcVBHYXBoQXFNeVhWIiwiQW1vdW50IjoiMTYxMTYiLCJQYXRocyI6W3siY3VycmVuY3kiOiJTVFgiLCJpc3N1ZXIiOiJyU1RBWUt4RjJLNzdaTFo4R29Bd1RxUEdhcGhBcU15WFYifV0sIkZlZSI6IjE1In0=
+   
+9) SIGN the payload offline.
 
-9) Then copy the tx blob and past it in the Tx_blob section and click SUBMIT payload online, watch the results.
+10) Then copy the tx blob and past it in the Tx_blob section and click SUBMIT payload online, watch the results.
 
 Try the demo online here: https://skunk-proper-smoothly.ngrok-free.app/tools/signofflinepayload/signsubmit
