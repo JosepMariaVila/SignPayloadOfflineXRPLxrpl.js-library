@@ -35,8 +35,8 @@ Step by step guide to use the code:
    To create a payload check this tool:
    https://xaman.dev/signing-tool
    
-10) SIGN payload offline.
+10) SIGN payload offline (Once used the private key in this computer, don't use this computer to connect to internet again to keep the private key secure)
 
-11) Then copy tx blob and past it in Tx_blob section, connect to the internet and click "SUBMIT signed payload online", watch the results.
+11) Then, using another computer, copy tx blob and past it in Tx_blob section, connect to the internet and click "SUBMIT signed payload online", watch the results.
 
 Try the demo online here: https://skunk-proper-smoothly.ngrok-free.app/tools/signofflinepayload/signsubmit
